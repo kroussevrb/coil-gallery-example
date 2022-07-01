@@ -1,6 +1,7 @@
 package com.asd.myapplication
 
 import android.Manifest
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
@@ -102,6 +103,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@SuppressLint("UnusedMaterialScaffoldPaddingParameter")
 @Composable
 fun Gallery(lifecycle: Lifecycle, imageLoader: ImageLoader) {
     PermissionAccess(
